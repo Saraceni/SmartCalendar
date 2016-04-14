@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QRCodeViewController" customModule="SmartCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leia o QRCode para salvar o evento em sua agenda." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhi-12-Bur">
+                                <rect key="frame" x="8" y="28" width="359" height="39.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skp-10-ALQ">
+                                <rect key="frame" x="66" y="75" width="243" height="243"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="359" id="CWD-Ya-Dgl"/>
+                                    <constraint firstAttribute="width" secondItem="Skp-10-ALQ" secondAttribute="height" multiplier="1:1" id="htE-LX-IfN"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CWD-Ya-Dgl"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34423928006649457" green="0.5077155464476456" blue="0.81491315364837646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Skp-10-ALQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="0sv-gn-OpF"/>
+                            <constraint firstItem="Skp-10-ALQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Eav-xH-m0m"/>
+                            <constraint firstItem="Rhi-12-Bur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="K02-Rv-J5I"/>
+                            <constraint firstAttribute="trailing" secondItem="Rhi-12-Bur" secondAttribute="trailing" constant="8" id="Mwh-Fq-dUE"/>
+                            <constraint firstItem="Rhi-12-Bur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYo-Cs-ZUP"/>
+                            <constraint firstItem="Skp-10-ALQ" firstAttribute="top" secondItem="Rhi-12-Bur" secondAttribute="bottom" constant="8" id="U7E-GR-5gT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Skp-10-ALQ" secondAttribute="trailing" constant="50" id="XP0-gn-3Ae"/>
+                            <constraint firstAttribute="trailing" secondItem="Skp-10-ALQ" secondAttribute="trailing" constant="8" id="jkt-pA-fQX"/>
+                            <constraint firstItem="Rhi-12-Bur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="sJc-7T-XYx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PYo-Cs-ZUP"/>
+                                <exclude reference="0sv-gn-OpF"/>
+                                <exclude reference="jkt-pA-fQX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="qrCodePreview" destination="Skp-10-ALQ" id="JMc-dX-erx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="349.5"/>
+        </scene>
+    </scenes>
+</document>
