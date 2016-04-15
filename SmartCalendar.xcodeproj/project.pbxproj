@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C63EF0D1CC184E6008E0C65 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63EF0C1CC184E6008E0C65 /* EditEventViewController.swift */; };
 		0CAD0DA61CC02749007F8611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD0DA51CC02749007F8611 /* AppDelegate.swift */; };
 		0CAD0DA81CC02749007F8611 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD0DA71CC02749007F8611 /* QRCodeViewController.swift */; };
 		0CAD0DAB1CC02749007F8611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAD0DA91CC02749007F8611 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C63EF0C1CC184E6008E0C65 /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		0CAD0DA21CC02749007F8611 /* SmartCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAD0DA51CC02749007F8611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CAD0DA71CC02749007F8611 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0CAD0DA71CC02749007F8611 /* QRCodeViewController.swift */,
+				0C63EF0C1CC184E6008E0C65 /* EditEventViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				0CAD0DA81CC02749007F8611 /* QRCodeViewController.swift in Sources */,
 				0CAD0DAE1CC02749007F8611 /* SmartCalendar.xcdatamodeld in Sources */,
 				0CAD0DD11CC04236007F8611 /* DateUtils.swift in Sources */,
+				0C63EF0D1CC184E6008E0C65 /* EditEventViewController.swift in Sources */,
 				0CAD0DA61CC02749007F8611 /* AppDelegate.swift in Sources */,
 				0CAD0DCF1CC03115007F8611 /* EventHelper.swift in Sources */,
 			);
@@ -422,6 +426,7 @@
 				0CAD0DC41CC0274A007F8611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CAD0DC51CC0274A007F8611 /* Build configuration list for PBXNativeTarget "SmartCalendarUITests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				0CAD0DC71CC0274A007F8611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
